@@ -1,0 +1,12 @@
+- name: Retrieve Docker IP address
+  hosts: localhost
+  tasks:
+    - name: Gather docker facts
+      local_action:
+          module: docker_facts
+          images: "tektutor/ansible-ubuntu"
+
+    - name:  Print IP Address
+      debug msg="IP Address is {{item.value.docker_networksettings.IPAddress}}"
+      with_dict: docker_containers 
+      

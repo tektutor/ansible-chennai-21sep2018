@@ -1,0 +1,6 @@
+- name: This is a play
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: This is a ping task
+      ping:

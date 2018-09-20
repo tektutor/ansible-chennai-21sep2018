@@ -1,0 +1,8 @@
+- name: This playbook demonstrates installing simple tools
+  hosts: all
+  tasks:
+    - name: Install tree utility 
+      apt: name=tree state=latest update_cache=yes
+
+    - name: Install vim editor
+      apt: name=vim state=present update_cache=yes

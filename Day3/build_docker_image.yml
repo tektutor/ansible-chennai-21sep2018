@@ -1,0 +1,9 @@
+- name: Demonstrates building docker image
+  hosts: localhost
+  tasks:
+    - name: Build a custom docker imager
+      docker_image:
+        name: testimage
+        dockerfile: VimAndTreeDockerfile
+        path: .
+        state: present

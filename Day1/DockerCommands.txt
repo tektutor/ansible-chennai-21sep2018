@@ -1,0 +1,85 @@
+List all docker images
+docker images
+
+Create a Docker container
+docker run -it ubuntu /bin/bash
+
+Find more details about a Docker image
+docker image inspect ubuntu
+
+Find more details about a Docker container
+docker inspect container_name
+
+Find IP Address of a container
+docker inspect container_name | grep IPA
+docker inspect -f {{.NetworkSettings.IPA}} container_name
+
+List all currently running containers
+docker ps 
+
+List all containers (includes exited and currently running)
+docker ps -a
+
+List all currently running container id
+docker ps -q
+
+List all container id (includes exited and currently running)
+docker ps -aq
+
+Stop multiple containers
+docker stop $(docker ps -q)
+
+Remove multiple container forcieably
+docker rm -f $(docker ps -aq)
+
+Remove a Docker image ( You must stop & remove all containers that refers this image first)
+docker rmi ubuntu
+
+Remove a Docker image forcibly
+docker rmi -f ubuntu 
+
+Port forwarding
+docker run -d --name nginx1 --hostname nginx1 -p 8080:80 nginx
+
+Volume Mounting
+docker run -d --name nginx1 -v /root/localpath:/root/data nginx
+docker run -dit --mount type=bind,source=/root/Verizon/Day1,target=/root/data,readonly nginx
+
+Docker networking
+-----------------
+Create a network by name tektutor1
+docker network create tektutor1
+
+Create a container named nginx1 in tektutor1 network
+docker run -d --name nginx1 --network=tektutor1 bash
+
+Create a network by name tektutor2
+docker network create tektutor2
+
+Create a container named nginx2 in tektutor2 network
+docker run -d --name nginx2 --network=tektutor2 bash
+
+Check what containers are participating in tektutor1 and tektutor2 networks
+docker network inspect tektutor1
+docker network inspect tektutor2
+
+Find the ip addresses of nginx1 and nginx2 containers
+docker inspect nginx1 | grep IPA
+docker inspect nginx2 | grep IPA
+
+Try to ping nginx2 ip from nginx1 container - you should not be able to ping
+docker exec -it nginx1 bash
+ping 172.21.0.2 
+exit
+
+Try to ping nginx1 ip from nginx2 container - you should not be able to ping
+docker exec -it nginx2 bash
+ping 172.20.02
+exit
+
+
+
+
+
+
+

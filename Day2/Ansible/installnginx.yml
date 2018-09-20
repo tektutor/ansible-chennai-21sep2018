@@ -1,0 +1,8 @@
+- name: Demonstrates installing nginx web server
+  hosts: all
+  tasks:
+    - name: Install nginx web server
+      apt: name=nginx state=latest update_cache=yes
+
+    - name: Restart nginx web server
+      shell: service nginx restart

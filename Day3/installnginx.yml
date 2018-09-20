@@ -1,0 +1,48 @@
+- name: Demonstrate nginx web server installation
+  hosts: all
+  vars:
+    - greeting_msg: DevOps!
+    - provisioner_tool: Docker
+    - automation_tool: Ansible
+  tasks:
+    - name: Install net-tools package
+      when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+      apt: name=net-tools state=latest update_cache=yes
+
+    - name: Retrieve IP address
+      shell: ifconfig eth0
+      register: ip_addr
+
+    - debug: var=ip_addr
+
+    - name: Install nginx web server
+      when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+      apt: name=nginx state=latest update_cache=yes
+
+    - name: Create nginx web root folder
+      file: path=/var/html state=directory mode=0777
+
+    - name: Configure nginx web root folder
+      when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+      copy: src=default dest=/etc/nginx/sites-available/default 
+      notify:
+         - Restart the web server
+
+    - name: Deploy html page
+      template: src=index.html.j2 dest=/var/html/index.html
+
+  handlers: 
+    - name: Restart the web server
+      shell: service nginx restart
+
+- name: Test if our web page is accessible
+  hosts: localhost
+  vars_files:
+     - urls_file 
+  tasks:
+    - name: Check ubuntu1 web page
+      shell: "curl {{item}}"
+      register: output 
+      with_items: "{{nginx_urls}}"
+
+    - debug: var=output

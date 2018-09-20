@@ -1,0 +1,13 @@
+- name: Demonstrates tomcat web server installation
+  hosts: all
+  tasks:
+    - name: Install tomcat web server
+      apt: name=apache2 state=latest update_cache=yes
+
+    - name: Start tomcat web server
+      command: service apache2 start
+
+    - debug: msg="Perform deploy here ..."
+
+    - name: Stop tomcat web server
+      command: service apache2 stop

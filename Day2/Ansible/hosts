@@ -1,0 +1,18 @@
+[all]
+ubuntu3 ansible_port=2003     
+ubuntu1 ansible_port=2001
+ubuntu2 ansible_port=2002
+
+[dev_servers]
+ubuntu[1:2]
+
+[qa_servers]
+ubuntu2
+
+[prod_servers]
+ubuntu3
+
+[all:vars]
+ansible_host=localhost
+ansible_user=root
+ansible_private_key_file=/root/.ssh/id_rsa
