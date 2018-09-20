@@ -1,5 +1,6 @@
 - name: Demonstrate nginx web server installation
   hosts: all
+  become: yes
   vars:
     - greeting_msg: DevOps!
     - provisioner_tool: Docker

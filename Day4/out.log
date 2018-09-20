@@ -1,0 +1,188 @@
+ansible 2.6.3
+  config file = /root/Verizon/Day4/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.15rc1 (default, Apr 15 2018, 21:51:34) [GCC 7.3.0]
+Using /root/Verizon/Day4/ansible.cfg as config file
+Parsed /root/Verizon/Day4/hosts inventory source with ini plugin
+META: ran handlers
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662 `" && echo ansible-tmp-1537424880.82-83269785636662="` echo /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662 `" ) && sleep 0'"'"''
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264 `" && echo ansible-tmp-1537424880.85-220884239995264="` echo /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264 `" ) && sleep 0'"'"''
+<localhost> (0, 'ansible-tmp-1537424880.82-83269785636662=/root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662\n', '')
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988 `" && echo ansible-tmp-1537424880.87-194116271687988="` echo /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988 `" ) && sleep 0'"'"''
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500 `" && echo ansible-tmp-1537424880.86-98340906824500="` echo /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500 `" ) && sleep 0'"'"''
+<localhost> (0, 'ansible-tmp-1537424880.85-220884239995264=/root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264\n', '')
+<localhost> (0, 'ansible-tmp-1537424880.86-98340906824500=/root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500\n', '')
+<localhost> (0, 'ansible-tmp-1537424880.87-194116271687988=/root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988\n', '')
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417 `" && echo ansible-tmp-1537424880.87-265952128983417="` echo /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417 `" ) && sleep 0'"'"''
+<localhost> (0, 'ansible-tmp-1537424880.87-265952128983417=/root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417\n', '')
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpAgfQrp TO /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ping.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpBlP5VH TO /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ping.py
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 '[localhost]'
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpsGCP8w TO /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ping.py
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f '[localhost]'
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 '[localhost]'
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmp9ZdmoR TO /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ping.py
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 '[localhost]'
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmp3mGvtm TO /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ping.py
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d '[localhost]'
+ [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1
+to see detailed information
+<localhost> SSH: EXEC scp -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 /root/.ansible/tmp/ansible-local-32839CLHjOV/tmp9ZdmoR '[localhost]:/root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ping.py'
+ [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1
+to see detailed information
+<localhost> SSH: EXEC scp -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpsGCP8w '[localhost]:/root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ping.py'
+<localhost> (0, 'sftp> put /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpAgfQrp /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ping.py\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ping.py && sleep 0'"'"''
+<localhost> (0, 'sftp> put /root/.ansible/tmp/ansible-local-32839CLHjOV/tmpBlP5VH /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ping.py\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ping.py && sleep 0'"'"''
+<localhost> (0, 'sftp> put /root/.ansible/tmp/ansible-local-32839CLHjOV/tmp3mGvtm /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ping.py\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ping.py && sleep 0'"'"''
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/ca10be3a0f localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424880.85-220884239995264/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/69ebd5c64d localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424880.82-83269785636662/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=2003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/cf32a00529 localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424880.86-98340906824500/ > /dev/null 2>&1 && sleep 0'"'"''
+ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+<localhost> (0, '', '')
+ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3002 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/4f657cb2d3 localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424880.87-265952128983417/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '', '')
+ubuntu3 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3001 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/6fcf896c80 localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424880.87-194116271687988/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '', '')
+centos2 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b localhost '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+<localhost> (0, '', '')
+centos1 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+<localhost> (0, '/root\n', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b localhost '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548 `" && echo ansible-tmp-1537424881.31-120873123928548="` echo /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548 `" ) && sleep 0'"'"''
+<localhost> (0, 'ansible-tmp-1537424881.31-120873123928548=/root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548\n', '')
+Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+<localhost> PUT /root/.ansible/tmp/ansible-local-32839CLHjOV/tmps3ZDLF TO /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ping.py
+<localhost> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b '[localhost]'
+ [WARNING]: sftp transfer mechanism failed on [localhost]. Use ANSIBLE_DEBUG=1
+to see detailed information
+<localhost> SSH: EXEC scp -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b /root/.ansible/tmp/ansible-local-32839CLHjOV/tmps3ZDLF '[localhost]:/root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ping.py'
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b localhost '/bin/sh -c '"'"'chmod u+x /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ping.py && sleep 0'"'"''
+<localhost> (0, '', '')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b -tt localhost '/bin/sh -c '"'"'/usr/bin/python /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ping.py && sleep 0'"'"''
+<localhost> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to localhost closed.\r\n')
+<localhost> ESTABLISH SSH CONNECTION FOR USER: root
+<localhost> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o Port=3003 -o 'IdentityFile="/root/.ssh/id_rsa"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=root -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/d6223d619b localhost '/bin/sh -c '"'"'rm -f -r /root/.ansible/tmp/ansible-tmp-1537424881.31-120873123928548/ > /dev/null 2>&1 && sleep 0'"'"''
+<localhost> (0, '', '')
+centos3 | SUCCESS => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+META: ran handlers
+META: ran handlers

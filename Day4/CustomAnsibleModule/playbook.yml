@@ -1,0 +1,14 @@
+- name: Demonstrates use of our custom module in an Ansible playbook
+  hosts: localhost 
+  tasks:
+    - name: Invoke our hello custom module
+      hello: message='Hello Ansible Module!'
+      register: output
+
+    - debug: var=output
+
+    - name: Invoke our add custom module
+      add: firstValue=100.5  secondValue=200.5
+      register: output
+ 
+    - debug: var=output

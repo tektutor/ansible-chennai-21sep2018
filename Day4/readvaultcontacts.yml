@@ -1,0 +1,7 @@
+- name: Demonstrates accessing vault protected data from playbook
+  hosts: localhost
+  vars_files:
+     - contacts.yml
+  tasks:
+     - debug: msg="{{item.value.name}} ===> {{item.value.mobile}}"
+       with_dict: "{{contacts}}"

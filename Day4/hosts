@@ -9,6 +9,8 @@ centos3 ansible_port=3003
 [all:vars]
 ansible_user=root
 ansible_host=localhost
+ansible_become_user=root
+ansible_become_password=root
 ansible_private_key_file=/root/.ssh/id_rsa
 
 [ubuntu]
