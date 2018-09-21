@@ -1,6 +1,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
 
+
   <groupId>org.tektutor</groupId>
   <artifactId>tektutor-helloworld-app</artifactId>
   <packaging>jar</packaging>
