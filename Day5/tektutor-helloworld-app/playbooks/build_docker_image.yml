@@ -1,0 +1,16 @@
+- name: Demonstrates building docker image
+  hosts: localhost
+  tasks:
+    - name: Build a custom ubuntu docker image
+      docker_image:
+        name: tektutor/ansible-ubuntu 
+        dockerfile: Dockerfile
+        path: ../ubuntu 
+        state: present
+
+    - name: Build a custom centos docker image
+      docker_image:
+        name: tektutor/ansible-centos 
+        dockerfile: Dockerfile
+        path: ../centos 
+        state: present

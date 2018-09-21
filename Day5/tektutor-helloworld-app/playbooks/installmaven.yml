@@ -1,0 +1,32 @@
+- name: Installs maven and java
+  hosts: all
+  tasks:
+    - name : Install java in Ubuntu
+      when: ansible_distribution == "Ubuntu"
+      apt: name=default-jdk state=latest update_cache=yes
+
+    - name: Update yum in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=*
+
+    - name: Install epel release package in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=epel-release state=latest
+      
+    - name: Install java in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=java-1.8.0-openjdk-devel state=latest
+
+    - name : Install maven in Ubuntu
+      when: ansible_distribution == "Ubuntu"
+      apt: name=maven state=latest update_cache=yes
+
+    - name: Install tar utility in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=tar state=latest
+
+    - name: Install maven in CentOS
+      when: ansible_distribution == "CentOS"
+      shell: tar xzvf apache-maven-3.5.4-bin.tar.gz
+
+
