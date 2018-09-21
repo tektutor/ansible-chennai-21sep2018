@@ -1,7 +1,9 @@
-FROM ubuntu:16.04
-MAINTAINER Jeganathan Swaminathan <http://www.tektutor.org> <jegan@tektutor.org>
+
 
 RUN apt-get update && apt-get install -y openssh-server && apt-get install -y python-minimal && apt-get install -y default-jdk && apt-get install -y maven
+
+RUN apt-get install -y git 
+
 RUN mkdir /var/run/sshd
 
 #Change the root user password to root
